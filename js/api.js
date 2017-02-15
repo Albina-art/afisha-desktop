@@ -1,12 +1,13 @@
 window.remote = "https://stark-cliffs-87419.herokuapp.com"
 
 window.api = {
-  regions: function (callback) {
+  regions: (callback) => {
     return $.ajax({
       url: window.remote + '/regions/index.json',
       success: callback,
-      error: function(error){
-        window.show(window.templates.error(error))
+      error: (error) => {
+        console.error("Проблемы с интернетом? Ещё одна попытка через 30 секунд")
+        setTimeout(() => api.regions(callback), 30000)
       }
     })
   },

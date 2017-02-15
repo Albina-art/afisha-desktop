@@ -1,4 +1,4 @@
 .hall
   %a.ref{'href': "#{@hall.url}"}
     #{@hall.name}
-  %input{'type': 'checkbox', 'class': 'hall-check', 'name': @hall.id, 'checked': true}
+  %input{'type': 'checkbox', 'class': "hall-check odd#{@i}", 'name': @hall.id, 'checked': true}
