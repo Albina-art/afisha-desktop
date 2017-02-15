@@ -1,0 +1,39 @@
+{
+  "name": "ConcertPlanner",
+  "description": "ConcertPlanner app",
+  "version": "1.0.0",
+  "authors": "Albina-art",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Albina-art",
+  "license": "UNLICENSED",
+  "homepage": "localhost",
+  "dependencies": {
+    "shell":"*",
+    "bluebird": "^3.3.0",
+    "electron": "1.4.7",
+    "electron-installer-squirrel-windows": "^1.3.0",
+    "electron-packager": "^8.0.0",
+    "electron-packager-plugin-non-proprietary-codecs-ffmpeg": "^1.0.1",
+    "electron-rebuild": "^1.2.1",
+    "file-url": "^1.0.1",
+    "fs-sync": "1.0.2",
+    "getmac": "^1.0.7",
+    "iconv-lite": "^0.4.13",
+    "md5-file": "^3.1.1",
+    "memory-cache": "^0.1.4",
+    "mkpath": "^1.0.0",
+    "node-expat": "^2.3.13",
+    "nslog": "^3.0.0",
+    "request": "^2.74.0",
+    "sequelize": "3.24.2",
+    "soap": "0.12.0",
+    "sqlite3": "^3.1.1",
+    "winston": "^2.3.0",
+    "xml2js": "^0.4.16"
+  }
+}

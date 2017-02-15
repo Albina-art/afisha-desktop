@@ -1,0 +1,28 @@
+.halls-wrapper
+  %button#submit
+    Подтвердить
+  .concert-dates
+    .weeks
+      %select#week
+        %option{'value': '0'}
+          эта неделя
+        %option{'value': '1'}
+          через неделю
+        %option{'value': '2'}
+          через две
+        %option{'value': '3'}
+          через три
+        %option{'value': '4'}
+          через четыре
+        %option{'value': '5'}
+          через пять
+  .checkbox-global
+    %button#all-halls
+      выделить все
+    %button#no-hall
+      снять все галочки
+    %button#hall-save
+      сохранить настройки
+  .halls-list
+    - @halls.forEach (hall) ->
+      != HAML.hall({hall: hall})

@@ -1,0 +1,10 @@
+.ref {
+	text-decoration: none
+}
+a {
+	color: black;
+}
+
+button, select {
+  margin: 1ex;
+}

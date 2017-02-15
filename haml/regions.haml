@@ -1,0 +1,7 @@
+.regions-wrapper
+  %select{'id': 'region'}
+    - @regions.forEach (region) ->
+      %option{'value': "#{region.id}"}
+        #{region.name}
+  %button#start{'onclick': 'console.log("kaka")'}
+    Начать

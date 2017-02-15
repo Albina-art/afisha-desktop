@@ -1,0 +1,8 @@
+node_modules
+app/js/app.js
+app/node_modules
+temp/*
+npm-debug.log
+*.swp
+*.swo
+
