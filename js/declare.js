@@ -11,8 +11,8 @@ window.controller = {}
 
 const shell = require('electron').remote.shell;
 
-$(document).on('click', 'a[href^="http"]', (event) => {
+$(document).on('click', 'a[href^="http"]',(event) =>{
     event.preventDefault();
-    shell.openExternal(this.href);
+    shell.openExternal(event.target.href);
 });
 

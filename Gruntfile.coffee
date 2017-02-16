@@ -22,7 +22,7 @@ module.exports = (grunt) ->
         options:
           atBegin: true
       concat:
-        files: ['vendor/*.js', 'js/app.js', 'temp/templates.js', 'vendor/*.js'],
+        files: ["temp/templates.js", 'vendor/*.js', 'js/declare.js', 'js/api.js', 'js/controllers/*.js', 'js/init.js']
         tasks: ['concat:dev'],
         options:
           atBegin: true

@@ -1,0 +1,12 @@
+.concerts
+  - if @concert
+    .nav-bar
+      %button#left{'disabled': true}
+        Назад
+      %button#right
+        Вперёд
+    #concert-w
+      != HAML.concert({concert: @concert})
+  - else
+    .no-concert
+      Ты не пойдёшь на концерт

@@ -1,0 +1,12 @@
+.concert
+  .hall-in-concert
+    %a.ref.hall-ref{'href': @concert.hall.url}
+      != @concert.hall.name 
+  - if @concert.desc
+    .description
+      != @concert.desc
+  - if @concert.prog
+    .program
+      != @concert.prog
+  - if @concert.imageR
+    %img.concert-img{'src': @concert.imageR}
