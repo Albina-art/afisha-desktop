@@ -3,5 +3,5 @@
     - @regions.forEach (region) ->
       %option{'value': "#{region.id}"}
         #{region.name}
-  %button#start{'onclick': 'console.log("kaka")'}
-    Начать
+  %button#start
+    %img#startimg{ src = 'image/start.png' }

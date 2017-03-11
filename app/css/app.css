@@ -1,11 +1,18 @@
-.ref {
-	text-decoration: none
+body {
+    background: url(../image/fone.jpg);
+    /*margin:0 auto;*/
+    margin-left: 5%;
+    margin-right: 10%;
+    color: white;
 }
+strike, .ref {
+    text-decoration: none;
+}    
 a {
-	color: black;
+    color: white;
 }
 input.hall-check {
-    right: 0;
+    right: 5%;
     /* vertical-align: middle; */
     /* float: right; */
     /* margin-right: 0; */
@@ -15,6 +22,8 @@ input.hall-check {
 }
 button, select {
   margin: 1ex;
+  /*color: #3D1108;*/
+  background-color: whitesmoke;
 }
 .hall {
     padding-top: 1ex;
@@ -22,4 +31,11 @@ button, select {
 }
 .hall.odd0 {
   background-color: bisque;
+}
+.hall.odd0 > a{
+  color: black;
+}
+img#startimg{
+    width: 60px;
+    height: 20px;
 }
